@@ -11,7 +11,7 @@ categoriesRouter.get("/", categoriesController.getAllCategories);
 categoriesRouter.get("/:id", categoriesController.getCategoryDetail);
 categoriesRouter.post(
   "/",
-  checkPermission,
+  // checkPermission,
   uploadImage.single("image"),
   categoriesController.createCategory
 );
